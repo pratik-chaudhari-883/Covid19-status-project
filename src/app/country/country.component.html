@@ -1,0 +1,30 @@
+
+<input type="text" (keyup)="getval($event.target.value)" (keyup.enter)="ChangeCountry()" class="form-control mt-4" placeholder="enter contry here">
+
+
+
+<!-- hide data -->
+<div class="contaner-flud">
+    <h1 class="text-center mt-4 text-uppercase">{{currentval}} status</h1>
+    <div class="row text-center">
+      <div class="col-md-4">
+                 <div class="card bg-warning text-white">
+                   <div class="card-body"><h3>Confirmed Cases</h3><h3>{{Data.confirmed.value}}</h3></div>
+                 </div>
+      </div>
+      <div class="col-md-4">
+                  <div class="card card bg-success text-white">
+                   <div class="card-body"><h3>Recovered Cases</h3><h3>{{Data.recovered.value}}</h3></div>
+                 </div>
+      </div>
+      <div class="col-md-4">
+                  <div class="card card bg-danger text-white">
+                   <div class="card-body"><h3>Death Cases</h3><h3>{{Data.deaths.value}}</h3></div>
+                 </div>
+      </div>
+    </div>
+    </div>
+    <!-- 
+    hide data end -->
+       
+

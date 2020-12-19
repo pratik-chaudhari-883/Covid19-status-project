@@ -7,8 +7,8 @@ import { InjectApiService } from '../inject-api.service';
   styleUrls: ['./country.component.css']
 })
 export class CountryComponent implements OnInit {
-    Data=[];
-  currentval=""
+    Data:any=[];
+  currentval:any=""
   
   constructor(private api:InjectApiService) { }
 

@@ -9,7 +9,7 @@ import { InjectApiService } from '../inject-api.service';
 export class UserComponent  {
   
 
-   global=[];  
+    global:any=[];  
      
   constructor(private api:InjectApiService) {
    
